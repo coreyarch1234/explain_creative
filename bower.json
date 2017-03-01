@@ -1,0 +1,23 @@
+{
+  "name": "explain-creative",
+  "description": "explain-creative template",
+  "main": "server.js",
+  "authors": [
+    "coreyarch1234 <harrilal@mit.edu>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/coreyarch1234/explain_creative",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "js-cookie": "^2.1.3"
+  }
+}

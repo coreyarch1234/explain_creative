@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="col-sm-offset-3 col-sm-6">
+        <p>{{post.body}}</p>
+        <form id='new-comment'>
+            <legend>Make a Comment</legend>
+            <label for='body'>Comment</label>
+            </br>
+            <input type="text" class="form-control" placeholder= "Enter a comment" name="description"/>
+            </br>
+            <input type="text" class="form-control" value="{{post._id}}" name="post"/>
+            </br>
+            <button type='submit'>Save</button>
+        </form>
+
+        <legend>Comments</legend>
+        <ul class="list-group">
+            {{#each post.comments}}
+                <li class='list-group-item-comment'>
+                    <p>{{this.description}}</p>
+                    </br>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

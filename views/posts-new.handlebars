@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-offset-3 col-md-6">
+            <legend>Post a Video</legend>
+            <form action='/posts' id='new-post'>
+                <input type="text" placeholder= "Enter a title for your video" name="title" />
+                <button type='submit'>Save</button>
+            </form>
+            </br>
+            <ul class="list-group" id="posts">
+              {{#each posts}}
+                <li class='list-group-item'>
+                    <a href= '/posts/{{this._id}}'>{{this.body}}</a>
+                    <div class="remove-post" data-id="{{this._id}}">Remove</div>
+                    <a href= '/posts/{{this._id}}/edit'>Edit</a>
+                </li>
+              {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
