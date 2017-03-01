@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coreyarch1234/project-one.git"
+    "url": "git+https://github.com/coreyarch1234/explain_creative.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/coreyarch1234/project-one/issues"
+    "url": "https://github.com/coreyarch1234/explain-creative/issues"
   },
-  "homepage": "https://github.com/coreyarch1234/project-one#readme",
+  "homepage": "https://github.com/coreyarch1234/explain-creative#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "bower": "^1.8.0",

@@ -5,8 +5,9 @@ var Schema = mongoose.Schema;
 var PostSchema = new Schema({
   createdAt     : { type: Date },
   updatedAt     : { type: Date },
-  body   : { type: String, required: false },
+  body   : { type: String, required: false }, //Description of video
   title  : { type: String, required: true },
+  video_url: {type: String, required: true},
   comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }]
 
 })
