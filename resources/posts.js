@@ -11,22 +11,22 @@ module.exports = function(app) {
         });
     });
 
-    //Posts new form
-    app.get('/posts/new', function(req,res){
-        res.render('posts-new');
-    });
-
     //Posts Create route. Post posts. Save to database.
     app.post('/posts', function(req, res){
         var post = req.body;
+        post.youtubeToken = post.youtubeToken.split("=")[1];
+
         Post.create(post, function(err, post){
             if (err){ return res.status(300) };
             res.status(200).json(post);
         });
 
     });
-
-
+    app.get('/new', function (req, res) {
+        Post.find().exec(function(err, posts){
+            res.render('posts-new', {posts: posts});
+        });
+    });
 
     //Posts show
     app.get('/posts/:id', function(req, res){
@@ -68,6 +68,7 @@ module.exports = function(app) {
     //Signup/Login
     app.get('/signup', function(req, res){
       res.render('signup');
+
     });
 
     app.post('/signup', function(req, res){
@@ -81,7 +82,6 @@ module.exports = function(app) {
             if (err){ return res.status(300) };
             var token = jwt.sign({ _id: user._id }, 'shhhhhhared-secret');
             console.log("hi")
-            // console.log(req.data.token)
             res.send({ token: token })
         });
     });
@@ -100,7 +100,7 @@ module.exports = function(app) {
                 user.comparePassword(req.body.password, function(err, isMatch) {
                 if (isMatch && !err) {
                   // Create token if the password matched and no error was thrown
-                  var token = jwt.sign(user, config.secret, {
+                  var token = jwt.sign(user, 'shhhhhhared-secret', {
                     expiresIn: 10080 // in seconds
                   });
                   res.json({ success: true, token: 'JWT ' + token });

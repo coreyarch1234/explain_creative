@@ -1,22 +1,26 @@
-<div class="container">
-    <div class="row">
-        <div class="col-sm-offset-3 col-md-6">
-            <legend>Share a Video</legend>
-            <form action='/posts' id='new-post'>
-                <input type="string" placeholder= "Enter a title for your video" name="title" />
-                <input type="string" placeholder= "Paste the Youtube Link" name="video_url" />
-                <button type='submit'>Save</button>
-            </form>
-            </br>
-            <ul class="list-group" id="posts">
-              {{#each posts}}
-                <li class='list-group-item'>
-                    <a href= '/posts/{{this._id}}'>{{this.body}}</a>
-                    <div class="remove-post" data-id="{{this._id}}">Remove</div>
-                    <a href= '/posts/{{this._id}}/edit'>Edit</a>
-                </li>
-              {{/each}}
-            </ul>
-        </div>
+<div class="row">
+    <div>
+        <legend>Share a Video</legend>
+        <form  id='new-post'>
+            <input type="text" placeholder= "Enter a title for your video" name="title" />
+            <input type="text" placeholder= "Paste the Youtube Link" name="youtubeToken" />
+            <button type='submit'>Save</button>
+        </form>
+        </br>
+        <ul class="list-group" id="posts">
+          {{#each posts}}
+            <li class='list-group-item'>
+                <a href= '/posts/{{this._id}}'>{{this.body}}</a>
+                <div class="videoWrapperOuter">
+                    <div class="videoWrapperInner">
+                      <!-- <iframe src="https://www.youtube.com/embed/8Qz0Vvzgvj0"></iframe> -->
+                      <iframe frameborder="0" width="560" height="315" src="https://www.youtube.com/embed/{{this.youtubeToken}}" allowfullscreen="true"></iframe>
+                    </div>
+                </div>
+                <div class="remove-post" data-id="{{this._id}}">Remove</div>
+                <a href= '/posts/{{this._id}}/edit'>Edit</a>
+            </li>
+          {{/each}}
+        </ul>
     </div>
 </div>

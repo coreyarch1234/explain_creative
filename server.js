@@ -42,6 +42,12 @@ app.use(jwt({
     }
 }).unless({path: ['/', '/login', '/signup']}));
 
+app.use(function (err, req, res, next) {
+    if (err.name === 'UnauthorizedError') {
+      res.redirect('/login');
+    }
+});
+
 require("./resources/posts")(app);
 
 

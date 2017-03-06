@@ -1,3 +1,140 @@
 body {
     background: white;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.banner{
+    display: table-cell;
+    padding: 0;
+    opacity: 1;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.head-wrapper{
+    /*background-image: url(/uploads/5/5/0/3/55034571/background-images/732955881.jpg) !important;*/
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    background-size: 100% !important;
+    background-color: transparent !important;
+    background: inherit;
+}
+
+.first-feature{
+    /*background-color: #F7F5F2;*/
+    padding-bottom: 40px;
+}
+
+.px3{
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+}
+
+.container-flex{
+    background-color: #2bde96;
+    height: 35em;
+    max-width: 1040px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.first-container-flex{
+    background-color: #f7f5f2;
+    height: 35em;
+    max-width: 1040px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.third-container-flex{
+    background-color: #a3f3d7;
+    height: 35em;
+    max-width: 1040px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.first-feature-section{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.feature-card-container{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.feature-text{
+    text-align: left;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    width: 40%;
+    font-size: 60px;
+    font-weight: 350;
+    line-height: 1.5em;
+}
+
+.third-feature-text{
+    text-align: left;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    width: 40%;
+    font-size: 60px;
+    font-weight: 350;
+    line-height: 1.5em;
+    color: black;
+}
+
+
+.head-title{
+    text-align: center;;
+    padding-top: 1.5em;
+    width: 100%;
+    font-size: 90px;
+    font-weight: 300;
+    color: black;
+    /*line-height: 1em;*/
+}
+
+.head-description{
+    text-align: center;
+    padding-top: 0.2em;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 200;
+    color: black;
+    line-height: 1.5em;
+    padding-right: 20%;
+    padding-left: 20%;
+    text-transform: lowercase;
+}
+
+
+.video-left{
+    width: 50%;
+    float: right;
+    padding-top: 7em;
+}
+
+.create-video{
+    display: inline-block;
+    height: 60px;
+    padding-top: 0.5em;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 75%;
+
 }

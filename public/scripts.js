@@ -6,12 +6,22 @@ $(document).ready(function(){
         $.ajax({
            url: '/posts',
            data: post,
-           error: function() {
-              alert('Error');
+           fail: function() {
+              alert(error.message);
            },
            dataType: 'json',
            success: function(data) {
-              $('.list-group').append("<li class='list-group-item'>" + "<a href='/posts/{{this._id}}'>" + data.body + "</a>" + "</li>");
+               $('#posts').append(
+              "<li class='list-group-item'>" +
+                  "<a href= '/posts/'" + data._id + ">" + data.body + "</a>" +
+                  "<div class='videoWrapperOuter'>" +
+                      "<div class='videoWrapperInner'>" +
+                        "<iframe frameborder='0' width='560' height='315' src='https://www.youtube.com/embed/'" + data.video_url + "' allowfullscreen='true'></iframe>" +
+                      "</div>" +
+                  "</div>" +
+                  "<div class='remove-post' data-id='" + data._id + "'>Remove</div>" +
+                  "<a href= '/posts/'"+ data._id + "'/edit'>Edit</a>" +
+              "</li>");
               $('#new-post')[0].reset();
            },
            type: 'POST'
@@ -79,6 +89,35 @@ $(document).ready(function(){
         var user = $(this).serialize();
         $.ajax({
            url: '/signup',
+           data: user,
+           error: function(error) {
+              alert(error.message);
+           },
+           dataType: 'json',
+           success: function(data) {
+              console.log("Received user data");
+              Cookies.set('token', data.token);
+              // IF YOU'D LIKE TO REDIRECT NOW, ADD THIS:
+              window.location.href = "/";
+           },
+           type: 'POST'
+        });
+    });
+
+    $('#logout').click(function(e){
+        Cookies.remove('token');
+        window.location.href = '/'
+    })
+
+    $('#direct-login').click(function(e){
+        window.location.href = '/new'
+    })
+    //Sign-Up
+    $('#login').submit(function(e){
+        e.preventDefault();
+        var user = $(this).serialize();
+        $.ajax({
+           url: '/login',
            data: user,
            error: function() {
               alert('Error');
