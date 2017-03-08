@@ -5,18 +5,6 @@ body {
     font-size: 16px;
 }
 
-.banner{
-    display: table-cell;
-    padding: 0;
-    opacity: 1;
-    vertical-align: middle;
-    text-align: center;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-}
 
 .head-wrapper{
     /*background-image: url(/uploads/5/5/0/3/55034571/background-images/732955881.jpg) !important;*/
@@ -75,15 +63,6 @@ body {
     margin-bottom: 40px;
 }
 
-.feature-text{
-    text-align: left;
-    padding-top: 1.5em;
-    padding-left: 1em;
-    width: 40%;
-    font-size: 60px;
-    font-weight: 350;
-    line-height: 1.5em;
-}
 
 .third-feature-text{
     text-align: left;
@@ -98,13 +77,38 @@ body {
 
 
 .head-title{
-    text-align: center;;
+    text-align: center;
     padding-top: 1.5em;
     width: 100%;
     font-size: 90px;
     font-weight: 300;
     color: black;
     /*line-height: 1em;*/
+}
+
+.feature-text{
+    /*left: 5%;*/
+    font-size: 40px;
+    font-weight: 350;
+    line-height: 1.5em;
+    position: absolute;
+    color: black;
+    /*width: 30%;*/
+    bottom: 20%;
+    float: left;
+    /*padding-left: 11%;
+    margin-left: auto;*/
+}
+
+.video{
+    position: relative;;
+    left: 50%;
+    /*width: 50%;*/
+    /*margin-left: 50%;*/
+}
+
+.contain-text-video{
+    position: relative;
 }
 
 .head-description{
@@ -120,13 +124,9 @@ body {
     text-transform: lowercase;
 }
 
-
-.video-left{
-    width: 50%;
-    float: right;
-    padding-top: 7em;
+.head-image{
+    margin: auto;
 }
-
 .create-video{
     display: inline-block;
     height: 60px;
