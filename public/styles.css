@@ -15,16 +15,6 @@ body {
     background: inherit;
 }
 
-.first-feature{
-    /*background-color: #F7F5F2;*/
-    padding-bottom: 40px;
-}
-
-.px3{
-    padding-right: 1.8rem;
-    padding-left: 1.8rem;
-}
-
 .container-flex{
     background-color: #2bde96;
     height: 35em;
@@ -33,20 +23,38 @@ body {
     margin-left: auto;
 }
 
-.first-container-flex{
-    background-color: #f7f5f2;
-    height: 35em;
-    max-width: 1040px;
-    margin-right: auto;
-    margin-left: auto;
+.first{
+    background-color: #ff687b;
 }
 
-.third-container-flex{
-    background-color: #a3f3d7;
-    height: 35em;
-    max-width: 1040px;
-    margin-right: auto;
-    margin-left: auto;
+.first-font-description{
+    color: #FFFFFF !important;
+    padding-bottom: 5%;
+}
+
+.first-font-title{
+    color: #FFFFFF !important;
+}
+
+.second{
+    background-color: #2752ff;
+}
+
+.second-font-description{
+    color: #FFFFFF !important;
+    padding-bottom: 5%;
+}
+
+.second-font-title{
+    color: #FFFFFF !important;
+}
+
+.third{
+    background-color: #ff7d5f;
+}
+
+.third-font{
+    color: #FFFFFF !important;
 }
 
 .first-feature-section{
@@ -83,32 +91,49 @@ body {
     font-size: 90px;
     font-weight: 300;
     color: black;
-    /*line-height: 1em;*/
-}
-
-.feature-text{
-    /*left: 5%;*/
-    font-size: 40px;
-    font-weight: 350;
-    line-height: 1.5em;
-    position: absolute;
-    color: black;
-    /*width: 30%;*/
-    bottom: 20%;
-    float: left;
-    /*padding-left: 11%;
-    margin-left: auto;*/
 }
 
 .video{
-    position: relative;;
-    left: 50%;
-    /*width: 50%;*/
-    /*margin-left: 50%;*/
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
 
-.contain-text-video{
-    position: relative;
+.button-teptu {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 2em;
+}
+
+.button-create-showcase {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 2em;
+}
+
+
+
+.button-create {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 2em;
 }
 
 .head-description{
@@ -122,19 +147,4 @@ body {
     padding-right: 20%;
     padding-left: 20%;
     text-transform: lowercase;
-}
-
-.head-image{
-    margin: auto;
-}
-.create-video{
-    display: inline-block;
-    height: 60px;
-    padding-top: 0.5em;
-    background-color: orange;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    margin-right: 75%;
-
 }
