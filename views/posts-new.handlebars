@@ -1,4 +1,73 @@
-<div class="row">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 new-feature-card-container new-second">
+                <h1 class="new-head-title new-second-font-title">
+                    The Breakdown
+                </h1>
+                <p class="new-head-description new-second-font-description" style="border-bottom:1px solid black;">
+                    With ShowCase, Teptu applicants have an opportunity to express their creativity and passion in a 5 to 7 minute video. You can talk about
+                    what inspired you to choose your research topic, the challenges you faced doing research, or a totally different idea. That's right, you can let your
+                    imagination go wild and choose any theory or concept in STEM.
+                </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 new-feature-card-container new-second">
+                <h1 class="new-head-title new-second-font-title">
+                    Pick a Topic
+                </h1>
+                <p class="new-head-description new-second-font-description">
+                    Choose a concept, theory, experiment or phenomenon that you are excited about. The more challenging, the more fun.
+                    It can range anywhere from global warming to why the night sky is dark.
+                </p>
+        </div>
+        <div class="col-md-6 new-feature-card-container new-second">
+                <h1 class="new-head-title new-second-font-title">
+                    Create the Video
+                </h1>
+                <p class="new-head-description new-second-font-description">
+                    Create a 5 to 7 minute video showing the idea in an interesting, creative and exciting way. Feel free to use physical props like
+                    lab equipment, your pets, or a car. You can also use animations and simulations in your video. Once you are done, submit the YouTube link
+                    along with other info in the form below.
+                </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class=" col-sm-6">
+            <legend>Submit Your Video</legend>
+            <form id='new-post'>
+                <div class="form-group">
+                    <!-- <label for='name'>Name</label> -->
+                    <input class="title-link" type="text" placeholder= "Enter a title for your video" name="title" /></br>
+                    <input  class="youtube-link" type="text" placeholder= "Paste the youtube link" name="youtubeToken" />
+                </div>
+                <button  class="btn btn-primary btn-responsive  button-create" type='submit'>Save</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<!-- <div class="container">
+    <div class="col-sm-offset-3 col-sm-6">
+        <legend>Get Ready To Enter ShowCase</legend>
+        <form id='signup'>
+            <div class="form-group">
+                <label for='name'>Name</label>
+                <input type="text" name='first' class="form-control" id="first" placeholder="First Name"><br>
+                <input type="text" name='last' class="form-control" id="last" placeholder="Last name">
+            </div>
+            <input type="email" name='email' class="form-control" id="email" placeholder="Email"><br>
+            <input type="password" name='password' class="form-control" id="password" placeholder="Password"><br>
+            <button type='submit' class="btn btn-primary btn-responsive button-create-showcase">Register</button>
+        </form>
+    </div>
+</div> -->
+
+<!-- <div class="row">
     <div>
         <legend>Share a Video</legend>
         <form  id='new-post'>
@@ -13,7 +82,6 @@
                 <a href= '/posts/{{this._id}}'>{{this.body}}</a>
                 <div class="videoWrapperOuter">
                     <div class="videoWrapperInner">
-                      <!-- <iframe src="https://www.youtube.com/embed/8Qz0Vvzgvj0"></iframe> -->
                       <iframe frameborder="0" width="560" height="315" src="https://www.youtube.com/embed/{{this.youtubeToken}}" allowfullscreen="true"></iframe>
                     </div>
                 </div>
@@ -23,4 +91,4 @@
           {{/each}}
         </ul>
     </div>
-</div>
+</div> -->

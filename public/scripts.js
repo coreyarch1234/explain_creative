@@ -1,4 +1,25 @@
 $(document).ready(function(){
+
+
+    function cookie(){
+        var cookie = Cookies.get("token");
+        if(cookie ==  null){
+            console.log("null");
+            $('#signup-button').show();
+            $('#login-button').show();
+            $('#logout-button').hide();
+        }
+        else{
+            $('#signup-button').hide();
+            $('#login-button').hide();
+            $('#logout-button').show();
+            console.log("not null");
+        }
+    };
+    cookie();
+
+
+
     //Create Post
     $('#new-post').submit(function(e){
         e.preventDefault();
@@ -98,15 +119,15 @@ $(document).ready(function(){
               console.log("Received user data");
               Cookies.set('token', data.token);
               // IF YOU'D LIKE TO REDIRECT NOW, ADD THIS:
-              window.location.href = "/";
+              window.location.href = "/new";
            },
            type: 'POST'
         });
     });
 
-    $('#logout').click(function(e){
+    $('#logout-button').click(function(e){
         Cookies.remove('token');
-        window.location.href = '/'
+        window.location.href = '/';
     })
 
     $('#direct-login').click(function(e){
@@ -127,7 +148,8 @@ $(document).ready(function(){
               console.log("Received user data");
               Cookies.set('token', data.token);
               // IF YOU'D LIKE TO REDIRECT NOW, ADD THIS:
-              window.location.href = "/";
+            //   b(hidden);
+              window.location.href = '/new';
            },
            type: 'POST'
         });

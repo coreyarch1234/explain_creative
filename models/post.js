@@ -9,9 +9,7 @@ var PostSchema = new Schema({
   title  : { type: String, required: true },
   youtubeToken: {type: String, required: true},
   comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }]
-
 })
-
 
 // SET createdAt and updatedAt
 PostSchema.pre('save', function(next) {
