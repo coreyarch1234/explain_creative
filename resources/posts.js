@@ -13,15 +13,25 @@ module.exports = function(app) {
 
     //Posts Create route. Post posts. Save to database.
     app.post('/posts', function(req, res){
-        var post = req.body;
-        post.youtubeToken = post.youtubeToken.split("=")[1];
+        User.findById(req.user._id).exec(function(err, user){
+            var post = req.body;
+            post.youtubeToken = post.youtubeToken.split("=")[1];
+            Post.create(post, function(err, post){
+                if (err){ return res.status(300) };
+                console.log("hello ma");
+                console.log(req.user._id);
+                user.posts.push(post);
 
-        Post.create(post, function(err, post){
-            if (err){ return res.status(300) };
-            res.status(200).json(post);
+                user.save(function (err) {
+                if (err){ return res.status(300) };
+                console.log("Here are the posts");
+                console.log(user.posts);
+                res.status(200).json(post);
+                });
+            });
         });
-
     });
+
     app.get('/new', function (req, res) {
         Post.find().exec(function(err, posts){
             res.render('posts-new', {posts: posts});

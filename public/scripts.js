@@ -44,6 +44,8 @@ $(document).ready(function(){
                   "<a href= '/posts/'"+ data._id + "'/edit'>Edit</a>" +
               "</li>");
               $('#new-post')[0].reset();
+            // console.log("Here is the user id from the token stored in the cookie:");
+            // console.log(Cookies.get('token')._id);
            },
            type: 'POST'
         });

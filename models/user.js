@@ -5,11 +5,11 @@ var mongoose = require('mongoose'),
 var UserSchema = new Schema({
     createdAt       : { type: Date }
   , updatedAt       : { type: Date }
-
   , email           : { type: String, unique: true, required: true }
   , password        : { type: String, required: true }
   , first           : { type: String, required: true }
-  , last            : { type: String, required: true }
+  , last            : { type: String, required: true },
+  posts: [{ type: Schema.Types.ObjectId, ref: 'Post' }]
 
 });
 

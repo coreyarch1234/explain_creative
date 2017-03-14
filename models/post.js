@@ -7,7 +7,12 @@ var PostSchema = new Schema({
   updatedAt     : { type: Date },
   body   : { type: String, required: false }, //Description of video
   title  : { type: String, required: true },
+  schoolName: {type: String, required: true},
   youtubeToken: {type: String, required: true},
+  user: {
+      type: Schema.Types.ObjectId,
+      ref: 'User'
+  },
   comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }]
 })
 
