@@ -46,6 +46,7 @@ $(document).ready(function(){
               $('#new-post')[0].reset();
             // console.log("Here is the user id from the token stored in the cookie:");
             // console.log(Cookies.get('token')._id);
+            window.location.href = "/submission";
            },
            type: 'POST'
         });

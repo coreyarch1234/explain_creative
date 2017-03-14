@@ -38,6 +38,10 @@ module.exports = function(app) {
         });
     });
 
+    app.get('/submission', function (req, res) {
+        res.render('submission');
+    });
+
     //Posts show
     app.get('/posts/:id', function(req, res){
         Post.findById(req.params.id).populate('comments').exec(function(err, post){
