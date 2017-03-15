@@ -18,8 +18,7 @@ app.use(express.static('public'));
 
 // getting-started.js Mongoose
 var mongoose = require('mongoose');
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/test-explain');
-mongoose.connect('mongodb://coreyarch543212:ironman123@ds129610.mlab.com:29610/heroku_tnswz69w');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/test-explain');
 
 
 var Comment = require("./models/comment.js"); //Allows use to use the Comment model here
