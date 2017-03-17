@@ -41,7 +41,7 @@ app.use(jwt({
       }
       return null;
     }
-}).unless({path: ['/', '/login', '/signup']}));
+}).unless({path: ['/', '/login', '/signup', '/show-submissions']}));
 
 app.use(function (err, req, res, next) {
     if (err.name === 'UnauthorizedError') {

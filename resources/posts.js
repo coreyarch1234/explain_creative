@@ -32,6 +32,11 @@ module.exports = function(app) {
         });
     });
 
+
+    app.get('/show-submissions', function (req, res) {
+        res.render('posts-show');
+    });
+
     app.get('/new', function (req, res) {
         Post.find().exec(function(err, posts){
             res.render('posts-new', {posts: posts});
