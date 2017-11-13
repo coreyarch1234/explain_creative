@@ -6,16 +6,33 @@ body {
 }
 
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+    padding: 50px;
+    padding-top: 10px;
+    padding-bottom: 25px;
     text-align: center;
     text-decoration: none;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.7;
+}
+
+
+.icon-center{
+    margin: auto;
+    text-align: center;
+}
+
+#contendify-pic {
+    margin-left: 25%;
+    padding-top: 5px;
+
+}
+
+#mit-pic{
+    margin-left: 37%;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .head-wrapper{
@@ -44,10 +61,7 @@ body {
     /*background-color: #52EDC7;*/
     color: #4A4A4A !important;
     text-align: center;
-    /*padding-top: .5em;
-    padding-bottom: 0.5em;*/
     width: 100%;
-    font-size: 80px;
     font-weight: 400;
     color: black;
 }
@@ -63,11 +77,11 @@ body {
 
 
 .second{
-    /*background-color: #2752ff;*/
-    background-color: #FF9500;
+    background-color: #F3A712;
+}
 
-    /*background-color: white;*/
-
+.third{
+    background-color: #273E47;
 }
 
 .second-font-description{
@@ -77,21 +91,23 @@ body {
 
 .second-font-title{
     color: #FFFFFF !important;
-    font-size: 40px !important;
+    font-size: 25px !important;
 }
 
-.third{
-    /*background-color: #ff7d5f;*/
-    /*background-color: white;*/
-    background-color: #5AC8FB;
-
-}
 
 .fourth{
     /*background-color: #ff7d5f;*/
     /*background-color: white;*/
-    background-color: #C86EDF;
+    background-color: #273E47;
 
+}
+
+.fifth {
+    background-color:#F3A712;
+}
+
+.sixth {
+    background-color: #273E47
 }
 
 .third-font{
@@ -109,7 +125,6 @@ body {
 .feature-card-container{
     overflow: hidden;
     position: relative;
-    margin-bottom: 40px;
 }
 
 
@@ -126,7 +141,7 @@ body {
 
 .head-title{
     text-align: center;
-    padding-top: .5em;
+    padding-top: .2em;
     width: 100%;
     font-size: 100px;
     font-weight: 300;
@@ -134,7 +149,7 @@ body {
 
 .sub-head-title{
     text-align: center;
-    padding-top: .5em;
+    padding-top: .2em;
     width: 100%;
     font-size: 35px;
     font-weight: 200;
@@ -201,6 +216,31 @@ body {
     line-height: 2em;
     padding-right: 22%;
     padding-left: 22%;
+    /*text-transform: lowercase;*/
+}
+
+.project-description{
+    text-align: left;
+    /*padding-top: 0.1em;*/
+    width: 100%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 2em;
+    padding-right: 22%;
+    padding-left: 22%;
+    /*text-transform: lowercase;*/
+}
+
+.project-description-foldscope{
+    text-align: left;
+    /*padding-top: 0.1em;*/
+    width: 100%;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 2em;
+    padding-right: 22%;
+    padding-left: 22%;
+    color: black !important;
     /*text-transform: lowercase;*/
 }
 
