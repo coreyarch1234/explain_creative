@@ -147,7 +147,7 @@ a {
     text-align: center;
     padding-top: .2em;
     width: 100%;
-    font-size: 75px;
+    font-size: 60px;
     font-weight: 300;
 }
 
@@ -215,9 +215,9 @@ a {
     text-align: center;
     /*padding-top: 0.1em;*/
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
-    line-height: 2.2em;
+    line-height: 2.0em;
     padding-right: 22%;
     padding-left: 22%;
     /*text-transform: lowercase;*/
@@ -227,7 +227,7 @@ a {
     text-align: left;
     /*padding-top: 0.1em;*/
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 100;
     line-height: 2em;
     padding-right: 22%;
@@ -309,7 +309,7 @@ a {
     /*text-align:center;*/
     padding-top: 1.5em;
     width: 100%;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 200;
     color: black;
 }
