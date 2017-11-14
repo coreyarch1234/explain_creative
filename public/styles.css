@@ -2,7 +2,7 @@ body {
     background: white;
     color: white;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif ;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .fa {
@@ -211,9 +211,9 @@ body {
     text-align: center;
     /*padding-top: 0.1em;*/
     width: 100%;
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 2em;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 2.2em;
     padding-right: 22%;
     padding-left: 22%;
     /*text-transform: lowercase;*/
