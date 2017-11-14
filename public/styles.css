@@ -5,6 +5,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    background-color:transparent !important;
+}
+
 .fa {
     padding: 50px;
     padding-top: 10px;
