@@ -1,8 +1,9 @@
 body {
     background: white;
     color: white;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #a77dc2 !important;
+
 }
 
 a {
@@ -58,7 +59,7 @@ a {
 }
 
 .first{
-    background-color: #273E47;
+    background-color: #a77dc2;
 }
 
 .show-submission-title{
@@ -155,10 +156,10 @@ a {
     text-align: center;
     padding-top: .2em;
     width: 100%;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 200;
     padding-bottom: .5em;
-    color: #C6C5B9 !important;
+    color: #ffc3a0 !important;
 }
 
 
@@ -227,7 +228,7 @@ a {
     text-align: left;
     /*padding-top: 0.1em;*/
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 100;
     line-height: 2em;
     padding-right: 22%;
